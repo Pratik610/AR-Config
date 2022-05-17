@@ -39,7 +39,13 @@ const BikeScreen = () => {
 		model:'./Japan/Shanghai.gltf',
 		background:'./images/bg-shanghai.png',
 		poster:'./images/shanghai.png'
-	}
+	},
+	{
+		name:'Viper',
+		model:'https://ar-config-japan.s3.us-west-1.amazonaws.com/VP.gltf',
+		background:'./images/bg-viper.png',
+		poster:'./images/viper.png'
+	},
 
 ]
 
@@ -87,7 +93,7 @@ const BikeScreen = () => {
 						<i class='fa-solid fa-chevron-left '></i>
 					</button>
 
-					<div className={` h-100 ${bike === 0 ? 'xplorer' : bike === 1 ? 'glyder' : bike === 2 ?  'dolphine'  : bike === 3 ?  'viper': bike === 4 ? 'shanghai':'' } `}>
+						<div className={` h-100 ${bike === 0 ? 'xplorer' : bike === 1 ? 'glyder' : bike === 2 ?  'dolphine'  : bike === 5 ?  'viper': bike === 4 ? 'shanghai':'' } `}>
 						
 						
 						<model-viewer
