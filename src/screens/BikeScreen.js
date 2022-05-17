@@ -10,7 +10,7 @@ const BikeScreen = () => {
 	const [bike, setBike] = useState(0)
 	const allBikes = [{
 		name:'Xplorer',
-		model:'./Japan/Explorer.gltf',
+		model:'./Japan/XPL.gltf',
 		background:'./images/bg-xplorer.png',
 		poster:'./images/exp1.png'
 	
@@ -27,12 +27,7 @@ const BikeScreen = () => {
 		background:'./images/bg-dolphine.png',
 		poster:'./images/Dolphin.png'
 	},
-	{
-		name:'Viper',
-		model:'./Japan/VPN.gltf',
-		background:'./images/bg-viper.png',
-		poster:'./images/viper.png'
-	},
+	
 	{
 		name:'EMX',
 		model:'./Japan/EMX.gltf',
@@ -44,7 +39,12 @@ const BikeScreen = () => {
 		model:'./Japan/Shanghai.gltf',
 		background:'./images/bg-shanghai.png',
 		poster:'./images/shanghai.png'
-	}
+	},{
+		name:'Viper',
+		model:'./Japan/VRR/VRR.gltf',
+		background:'./images/bg-viper.png',
+		poster:'./images/viper.png'
+	},
 
 ]
 
@@ -57,7 +57,7 @@ const BikeScreen = () => {
 			// updatingBar.style.width = `${event.detail.totalProgress * 100}%`
 
 			 const percentage = event.target.querySelector('.percentage')
-			 percentage.innerHTML = `${event.detail.totalProgress * 100}%`;
+			 percentage.innerHTML = `${parseInt(event.detail.totalProgress * 100)}%`;
 			 console.log(event.detail.totalProgress)
 			if (event.detail.totalProgress === 1) {
 				progressBar.classList.add('hide')
@@ -92,7 +92,7 @@ const BikeScreen = () => {
 						<i class='fa-solid fa-chevron-left '></i>
 					</button>
 
-					<div className={` h-100 ${bike === 0 ? 'xplorer' : bike === 1 ? 'glyder' : bike === 2 ?  'dolphine'  : bike === 3 ?  'viper': bike === 5 ? 'shanghai':'' } `}>
+					<div className={` h-100 ${bike === 0 ? 'xplorer' : bike === 1 ? 'glyder' : bike === 2 ?  'dolphine'  : bike === 3 ?  'viper': bike === 4 ? 'shanghai':'' } `}>
 						
 						
 						<model-viewer
