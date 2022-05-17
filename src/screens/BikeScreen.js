@@ -39,12 +39,7 @@ const BikeScreen = () => {
 		model:'./Japan/Shanghai.gltf',
 		background:'./images/bg-shanghai.png',
 		poster:'./images/shanghai.png'
-	},{
-		name:'Viper',
-		model:'./Japan/VRR/VRR.gltf',
-		background:'./images/bg-viper.png',
-		poster:'./images/viper.png'
-	},
+	}
 
 ]
 
