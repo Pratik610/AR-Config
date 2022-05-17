@@ -85,7 +85,7 @@ const BikeScreen = () => {
 					className={`h-100  position-relative ${
 						!collapse ? 'open-model' : 'close-model'
 					} `}>
-					<img src='./images/logo.png' className='logo-bs' alt='' />
+					<img src='./images/logo1.png' className='logo-bs' alt='' />
 					<button
 						className={`collapse-btn d-none d-lg-block  ${collapse && 'rotate'}`}
 						onClick={() => setCollapse(!collapse)}>
